@@ -1,0 +1,30 @@
+package day13.this_;
+
+public class Person {
+	
+	String name;
+	int age;
+	
+	//생성자
+	Person(){
+		this("홍길동",1); //두개짜리 생성자 호출
+	}
+	
+	Person(String name){
+		this(name,1);	//두개짜리 생성자 호출
+	}
+	
+	Person(String name, int age){
+		this.name = name.toUpperCase();
+		this.age = age;
+	}
+	
+	//메소드
+	String info() {
+		return "이름:" + name + ", 나이:" + age;
+	}
+
+}
+
+
+
